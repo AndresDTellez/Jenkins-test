@@ -1,0 +1,252 @@
+# Creado por https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,eclipse,maven,windows,intellij
+# Edite en https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,eclipse,maven,windows,intellij
+
+### Eclipse ###
+.metadatos
+compartimiento/
+tmp /
+* .tmp
+* .bak
+* .swp
+* ~ .nib
+propiedades.locales
+.settings /
+.loadpath
+.recommenders
+
+# Fabricantes de herramientas externos
+.externalToolBuilders /
+
+# "Configuraciones de lanzamiento de Eclipse" almacenadas localmente
+*.lanzamiento
+
+# Específico de PyDev (Python IDE para Eclipse)
+* .pydevproject
+
+# Específico de CDT (herramientas de desarrollo C / C ++)
+.cproyecto
+
+# CDT- autotools
+.autotools
+
+# Procesador de anotaciones Java (APT)
+.factorypath
+
+# Específico de PDT (herramientas de desarrollo PHP)
+.Construir camino
+
+# complemento sbteclipse
+.objetivo
+
+# Complemento Tern
+.tern-proyecto
+
+# Complemento TeXlipse
+.texlipse
+
+# STS (conjunto de herramientas Spring)
+.springBeans
+
+# Recomendados de código
+.recommenders /
+
+# Procesamiento de anotaciones
+.apt_generated /
+.apt_generated_test /
+
+# Scala IDE específico (desarrollo de Scala y Java para Eclipse)
+.cache-main
+.scala_dependencies
+.hoja de cálculo
+
+# Elimine el comentario de esta línea si desea ignorar el archivo de descripción del proyecto.
+# Normalmente, este archivo se rastrearía si contiene configuraciones de compilación / dependencia:
+#.proyecto
+
+### Parche Eclipse ###
+# Herramientas Spring Boot
+.sts4-cache /
+
+### Intellij ###
+# Cubre IDE de JetBrains: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm y Rider
+# Referencia: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# Cosas específicas del usuario
+.idea / ** / workspace.xml
+.idea / ** / tasks.xml
+.idea / ** / use.statistics.xml
+.idea / ** / diccionarios
+.idea / ** / estante
+
+# Archivos generados
+.idea / ** / contentModel.xml
+
+# Archivos sensibles o de alta rotación
+.idea / ** / dataSources /
+.idea / ** / dataSources.ids
+.idea / ** / dataSources.local.xml
+.idea / ** / sqlDataSources.xml
+.idea / ** / dynamic.xml
+.idea / ** / uiDesigner.xml
+.idea / ** / dbnavigator.xml
+
+# Gradle
+.idea / ** / gradle.xml
+.idea / ** / bibliotecas
+
+# Gradle y Maven con importación automática
+# Al usar Gradle o Maven con la importación automática, debe excluir los archivos del módulo,
+# ya que se volverán a crear y pueden provocar pérdidas. Descomentar si está usando
+# auto-importación.
+# .idea / artefactos
+# .idea / compiler.xml
+# .idea / jarRepositories.xml
+# .idea / modules.xml
+# .idea / *. iml
+# .idea / módulos
+# * .iml
+# * .ipr
+
+# CMake
+cmake-build - * /
+
+# Complemento de Mongo Explorer
+.idea / ** / mongoSettings.xml
+
+# Formato de proyecto basado en archivos
+* .iws
+
+# IntelliJ
+afuera/
+
+# complemento mpeltonen / sbt-idea
+.idea_modules /
+
+# Complemento JIRA
+atlassian-ide-plugin.xml
+
+# Complemento cursivo de Clojure
+.idea / replstate.xml
+
+# Complemento de Crashlytics (para Android Studio e IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Cliente de descanso basado en editor
+.idea / httpRequests
+
+# Android studio 3.1+ archivo de caché serializado
+.idea / caches / build_file_checksums.ser
+
+### Parche Intellij ###
+# Razón del comentario: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# * .iml
+# modules.xml
+# .idea / misc.xml
+# * .ipr
+
+# Complemento Sonarlint
+# https://plugins.jetbrains.com/plugin/7973-sonarlint
+.idea / ** / sonarlint /
+
+# Complemento SonarQube
+# https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
+.idea / ** / sonarIssues.xml
+
+# Complemento Markdown Navigator
+# https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
+.idea / ** / markdown-navigator.xml
+.idea / ** / markdown-navigator-enh.xml
+.idea / ** / markdown-navigator /
+
+# Error de creación de archivos de caché
+# Ver https://youtrack.jetbrains.com/issue/JBR-2257
+.idea / $ CACHE_FILE $
+
+# Complemento CodeStream
+# https://plugins.jetbrains.com/plugin/12206-codestream
+.idea / codestream.xml
+
+### Mac OS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# El icono debe terminar con dos \ r
+Icono
+
+
+# Miniaturas
+._ *
+
+# Archivos que pueden aparecer en la raíz de un volumen
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Traspa
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directorios potencialmente creados en el recurso compartido AFP remoto
+.AppleDB
+.AppleDesktop
+Carpeta de basura de red
+Elementos temporales
+.apdisk
+
+### Maven ###
+objetivo/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependencia-reducida-pom.xml
+buildNumber.properties
+.mvn / timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn / wrapper / maven-wrapper.jar
+
+### VisualStudioCode ###
+.vscode / *
+! .vscode / tasks.json
+! .vscode / launch.json
+* .code-espacio de trabajo
+
+### Parche VisualStudioCode ###
+# Ignorar todo el historial local de archivos
+.historia
+.ionido
+
+### Windows ###
+# Archivos de caché de miniaturas de Windows
+Thumbs.db
+Thumbs.db: encriptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Archivo de volcado
+* .stackdump
+
+# Archivo de configuración de carpeta
+[Dd] esktop.ini
+
+# Papelera de reciclaje utilizada en archivos compartidos
+$ RECICLAJE.BIN /
+
+# Archivos de Windows Installer
+*.taxi
+* .msi
+* .msix
+* .msm
+* .msp
+
+# Accesos directos de Windows
+* .lnk
+
+# Fin de https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,eclipse,maven,windows,intellij
