@@ -12,53 +12,17 @@ def params = [
       credentials : 'leeroy-jenkins' 
 ]
 
-node {
-      def error = null
-      try {
-            env.DSL_SCRIPTS_PATH = 'DSL-Scripts'
-            checkout(params.repository, params.credentials, env.BRANCH_NAME)
-            loadDSLJobs(env.DSL_SCRIPTS_PATH)
-      }
-      catch(caughtError){
-            error = caughtError
-            currentBuild.result = 'FAILURE'
-      }
-      finally{
-            notifyBuild(currentBuild.result)
-            cleanWs()
-            if(error){
-                  echo "Fallo al ejecutar JOB \u274C"
-                  throw error
-            }
-      }
-}
-
-
-def checkout(repository, credentials, branch){
-      checkout([
-            $class: 'GitSCM',
-            branches: [[name: branch]],
-            doGenerateSubmoduleConfigurations: false,
-            extensions: [],
-            submoduleCfg: [],
-            userRemoteConfigs: [[
-            credentialsId: credentials,
-            url: repository
-            ]]
-      ])
-}
-
-def loadDSLJobs(path){
-      stage('Load DSL'){
-            echo "Cargando archivos de configuracion \u2705"
-            jobDsl targets: 'DSL-Scripts/*/.groovy', ignoreExisting: false
-            echo "Se cargan Jobs correctamente \u2705"
-      }
-}
-
-def notifyBuild(String buildStatus = 'STARTED'){
-      stage('notifyBuild'){
-            buildStatus = buildStatus ?: 'SUCCESS'
-            echo "${buildStatus}"
-      }
-}
+rtServer (
+    id: 'Artifactory-1',
+    url: 'http://my-artifactory-domain/artifactory',
+    // If you're using username and password:
+    username: 'andres ',
+    password: '1018454119.At',
+    // If you're using Credentials ID:
+    //credentialsId: 'ccrreeddeennttiiaall',
+    // If Jenkins is configured to use an http proxy, you can bypass the proxy when using this Artifactory server:
+    bypassProxy: true,
+    // Configure the connection timeout (in seconds).
+    // The default value (if not configured) is 300 seconds:
+    timeout: 300
+)
